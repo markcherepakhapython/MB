@@ -1,0 +1,12 @@
+<body bgcolor="green">
+    <h1>Message Board Homepage</h1>
+    <ul style="list-style-type: none;">
+        {% for post in object_list %}
+            <li>
+                <p style="text-align: left; font-style: italic; font-size: x-large;">{{ post.author }}</p>
+                <p style="font-size: 120%;">{{ post.text }}</p>
+                <hr>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
